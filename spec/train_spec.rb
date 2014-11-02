@@ -12,12 +12,12 @@ describe Train do
 
 	it "should stop at a station" do
 		expect(station).to receive(:dock).with(train)
-		train.stop_at(station)
+		train.pick_up_from(station)
 	end
 
 	it "should leave a station" do
 		expect(station).to receive(:release).with(train)
-		train.leave(station)
+		train.leave_from(station)
 	end
 
 	it "should have coaches" do

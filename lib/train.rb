@@ -10,12 +10,19 @@ class Train
 		@capacity = coaches * 40
 	end
 
-	def stop_at(station)
+	def pick_up_from(station)
 			station.dock(self)
+			station.people.each do |person|
+				self.hold(person)
+				station.release(person)
+			end
 	end
 
-	def leave(station)
+	def leave_from(station)
 			station.release(self)
+			people.each do |person|
+				station.hold(person)
+			end
 	end
 
 end
