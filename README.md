@@ -8,12 +8,7 @@ Fast And Accessible Super Tube- ruby practice
 ###Person Class
 it should:
 - touch in at the station
-- enter a carrige on the train
-- get off a carriage on the train
 - touch out at the destination station
-optional:
-- be able to add money to their oyster
-- require a £2 GBP minimum to get into the station
 
 it interacts with:
 - train
@@ -32,7 +27,7 @@ it interacts with:
 
 ###Train Class
 it should:
-- leave one station and arrive at another
+- leave one station and arrive at another 
 - have coaches
 - have a capacity of 40 passengers per coach
 
