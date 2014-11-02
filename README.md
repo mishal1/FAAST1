@@ -34,12 +34,3 @@ it should:
 it interacts with:
 - person
 - train
-
-optional:
-###Tube System Class
-it should:
-- have a maximum amount of trains in the system
-
-
-it interacts with:
-- train
